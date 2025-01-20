@@ -133,7 +133,6 @@
   padding: 0px;
   overflow: auto;
   scrollbar-width: thin;
-  background-color: var(--sidebarBackground);
   border-bottom: 1px solid var(--tabBorderTop);
 }
 
@@ -143,7 +142,6 @@
   color: var(--sidebarMuted);
   text-align: center;
   white-space: nowrap;
-  background-color: var(--sidebarBackground);
 }
 
 .sidebar .sidebar-list-nav li {
@@ -178,7 +176,6 @@
 }
 
 .sidebar .sidebar-list-nav button[aria-selected] {
-  background-color: var(--sidebarBackground);
   border-bottom: var(--navTabBorderWidth) solid var(--sidebarLanguageAccentBar);
 }
 
@@ -229,11 +226,12 @@
 .sidebar .full-list a {
   padding: 10px 12px 10px 12px;
   color: var(--sidebarItem);
+  border-left: 2px solid transparent;
 }
 
 .sidebar .full-list a[aria-selected] {
   color: var(--sidebarActiveItem);
-  box-shadow: inset 2px 0px 0 var(--sidebarActiveItem);
+  border-left: 2px solid var(--sidebarActiveItem);
 }
 
 .sidebar .full-list a:hover {
@@ -254,7 +252,7 @@
   line-height: var(--sidebarLineHeight);
   position: absolute;
   display: block;
-  right: 20px;
+  right: 12px;
   transform: translateY(-146%);
 }
 
